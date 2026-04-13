@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>QR Code</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #111;
+  color: white;
+  flex-direction: column;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Scan Menu 📱</h2>
+<div id="qrcode"></div>
+
+<script>
+var websiteLink = "update.html"; // ✅ correct
+
+new QRCode(document.getElementById("qrcode"), {
+  text: websiteLink,
+  width: 250,
+  height: 250
+});
+</script>
+
+</body>
+</html>

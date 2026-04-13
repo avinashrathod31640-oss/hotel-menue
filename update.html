@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+ 
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>MR JALGAONKAR'S</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #111;
+  color: white;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+}
+
+.header h1 {
+  margin: 0;
+  color: gold;
+}
+
+.header p {
+  margin: 5px;
+  color: #ccc;
+}
+
+/* GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 15px;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+/* TEXT OVER IMAGE */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  width: 80%;
+}
+
+.content h2 {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin: 4px 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* PRICE COLOR */
+.price {
+  color: gold;
+}
+
+/* RESPONSIVE */
+@media(min-width:768px){
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="header">
+  <h1>MR JALGAONKAR'S 🍽️</h1>
+  <p>CHEESE PAV & STREET CAFE</p>
+</div>
+
+<div class="container">
+
+<!-- CHEESE PAV -->
+<div class="card">
+  <img src="pavimage.png">
+  <div class="content">
+    <h2>SIGNATURE CHEESE PAV</h2>
+    <p>Signature Pav <span class="price">₹59</span></p>
+    <p>Royal Cheese Pav <span class="price">₹29</span></p>
+    <p>Firecracker Pav <span class="price">₹39</span></p>
+    <p>Garlic Bomb Pav <span class="price">₹29</span></p>
+  </div>
+</div>
+
+<!-- ROLLS -->
+<div class="card">
+  <img src="rollimage.png">
+  <div class="content">
+    <h2>STREET ROLLS</h2>
+    <p>Royal Paneer Roll <span class="price">₹59</span></p>
+    <p>Street Veg Roll <span class="price">₹49</span></p>
+    <p>Fire Thecha Roll <span class="price">₹69</span></p>
+  </div>
+</div>
+
+<!-- FRIES -->
+<div class="card">
+  <img src="friese.png">
+  <div class="content">
+    <h2>CRUNCHY FRIES</h2>
+    <p>Classic Fries <span class="price">₹29</span></p>
+    <p>Peri-Peri Fries <span class="price">₹39</span></p>
+    <p>Cheese Fries <span class="price">₹59</span></p>
+  </div>
+</div>
+
+<!-- SHAKES -->
+<div class="card">
+  <img src="shakesimage.png">
+  <div class="content">
+    <h2>THICK SHAKES</h2>
+    <p>Choco Shake <span class="price">₹49</span></p>
+    <p>Oreo Shake <span class="price">₹59</span></p>
+    <p>Mango Shake <span class="price">₹59</span></p>
+  </div>
+</div>
+
+</div>
+
+</body>
+
+
+</html>
+
